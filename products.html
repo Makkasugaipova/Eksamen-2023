@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="produkt side til eksamen">
+    <meta property="og:description" content="her får du produkt side til nettsiden">
+    <meta name="author" content="annonym student">
+    <meta property="og:url" content="#"> <!-- satt inn # med tanken på at jeg ikke har en url som faktisk fungerer-->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1636820877358-5106624537db?q=80&w=3150&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <!-- jeg har tatt bilde fra unsplash og lagt det inn i hver metadata på ulike html sidene. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link av ikon som ble brukt  -->
+    <script
+      src="https://kit.fontawesome.com/44d3cca51b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <title>eksamen nettside - velkommen til nettsiden til min eksamen</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <a href="index.html" itemscope>
+        <img class="logo" src="img/logo1.png" alt="website logo" itemprop="logo">
+      </a>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="products.html" class="currentPage nav-link">Portfolio</a>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="index.html#contact" class="cta-btn nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content" itemscope>
+      <section aria-label="portfolio-title" class="portfolio" itemprop="image">
+        <h1 class="portfolio__title">Portfolio</h1>
+      </section>
+      <section aria-label="job-title" class="job">
+        <h2 class="job__title">Explore previous jobs</h2>
+        <a href="#branding" class="job-btn">Branding</a>
+        <a href="#design" class="job-btn">Design</a>
+        <a href="#development" class="job-btn">Development</a>
+      </section>
+      <section aria-label="branding-title" class="branding" id="branding">
+        <h2 class="job__title">Branding</h2>
+        <div class="grid design">
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section aria-label="branding-title" class="design" id="design">
+        <h2 class="job__title">Design</h2>
+        <div class="grid">
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section
+        aria-label="branding-title"
+        class="development"
+        id="development">
+        <h2 class="job__title">Development</h2>
+        <div class="grid">
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+          <figure class="branding-box">
+            400x400
+            <figcaption>Et harum quidem</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="primary-footer" itemscope>
+      <a href="#"> <img class="logo" src="img/logo1.png" alt="logo" itemprop="logo"></a>
+      <p class="">Companyrights Companyname 2023</p>
+      <ul  class="social-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <a href="#body" class="scroll-to-top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="forside, eksamen">
+    <meta property="og:description" content="her er forsiden til nettsiden">
+    <meta name="author" content="annonym student">
+    <meta property="og:url" content="#"> <!-- satt inn # med tanken på at jeg ikke har en url som faktisk fungerer-->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1636820877358-5106624537db?q=80&w=3150&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <!-- jeg har tatt bilde fra unsplash og lagt det inn i hver metadata på ulike html sidene. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link av ikon som ble brukt  -->
+    <script
+      src="https://kit.fontawesome.com/44d3cca51b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <title>eksamen nettside - velkommen til nettsiden til min eksamen</title>
+  </head>
+  <body id="body" itemscope>
+    <header class="header" itemscope>
+      <a href="#" itemscope>
+        <img class="logo" src="img/logo1.png" alt="website logo" itemprop="logo">
+      </a>
+      <nav class="primary-nav" itemprop="menu">
+        <ul>
+          <li><a href="index.html" class="currentPage nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a href="about.html#contact" class="cta-btn nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content" itemprop="image"> 
+      <section aria-label="hero" class="hero-content">
+        <video class="hero-video" autoplay muted loop>
+          <source src="img/mountains.mp4" type="video/mp4">
+        </video>
+        <div class="hero">
+          <h1 class="hero__title">Compeling headline</h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quibusdam ratione sint officia esse ipsum cum, praesentium incidunt
+            blanditiis tenetur, quod, itaque laboriosam consectetur eaque! Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="about.html" class="cta-btn">Read more about our services</a>
+        </div>
+      </section>
+      <section aria-label="home-title" class="home">
+        <!-- div bruk for display som mine container-->
+        <div class="container">
+        <!-- div bruk for display som mine container -->
+          <h2 class="home__title">
+            Enganging subheading. What can you help your visitors with
+          </h2>
+          <p class="home__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quibusdam ratione sint officia esse ipsum cum, praesentium incidunt
+            blanditiis tenetur, quod, itaque laboriosam consectetur eaque! Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
+      <section aria-label="about-title" class="about">
+        <!-- div bruk for display som mine container -->
+        <div class="container-flow">
+          <!-- div bruk for display som mine container -->
+          <figure>400x400</figure>
+          <figure>
+            <h3 class="about__title">About Our Company</h3>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quibusdam ratione sint officia esse ipsum cum, praesentium
+              incidunt blanditiis tenetur, quod, itaque laboriosam consectetur
+              eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem, ad. incidunt blanditiis tenetur, quod, itaque
+              laboriosam consectetur eaque! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Voluptatem, ad.
+            </p>
+            <a href="about.html" class="secondary-btn">Read more about us</a>
+          </figure>
+        </div>
+      </section>
+      <section aria-label="featured-title" class="featured sm-width">
+        <h3 class="featured__title">Our Services</h3>
+        <!-- div bruk for display som mine container -->
+        <div class="grid-flow">
+          <!-- div bruk for display som mine container -->
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-users"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"
+              ><i class="fa-solid fa-cloud-arrow-up"></i
+            ></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-code"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-wifi"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+        </div>
+      </section>
+      <section aria-label="sign-title" class="sign-contact">
+        <h2 class="sign__title">Sign up for our newsletter</h2>
+        <form method="POST">
+          <!-- div bruk av content  -->
+          <div class="sign-box">
+            <!-- div i bruk av content  -->
+            <input name="email" type="email" placeholder="sample@mail.com" >
+            <button class="cta-btn">Sign me up!</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="primary-footer">
+      <a href="#"> <img class="logo" src="img/logo1.png" alt="logo" itemprop="logo"></a>
+      <p class="">Companyrights Companyname 2023</p>
+      <ul  class="social-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <a href="#body" class="scroll-to-top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+  </body>
+</html>
+<!-- kilder lagt inn i koder og eksamensdokument -->

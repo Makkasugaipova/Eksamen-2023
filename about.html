@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta property="og:title" content="om nettside, eksamen">
+    <meta property="og:description" content="her får du informasjon om nettsiden, about us">
+    <meta name="author" content="annonym student">
+    <meta property="og:url" content="3"> <!-- satt inn # med tanken på at jeg ikke har en url som faktisk fungerer-->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1636820877358-5106624537db?q=80&w=3150&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <!-- jeg har tatt bilde fra unsplash og lagt det inn i hver metadata på ulike html sidene.  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!-- link til ikon som ble brukt  -->
+    <script
+      src="https://kit.fontawesome.com/44d3cca51b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon" >
+    <title>eksamen nettside - velkommen til nettsiden til min eksamen</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <a href="index.html" itemscope> 
+        <img class="logo" src="img/logo1.png" alt="website logo" itemprop="logo"  >
+      </a>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="currentPage nav-link">About</a></li>
+          <li><a href="index.html#contact" class="cta-btn nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content"  itemscope>
+      <section aria-label="about-page" class="about-page" itemprop="logo">
+        <article class="about__page">
+          <span class="company__name">Company name</span>
+          <h2 class="about__title">About Our Company</h2>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            impedit ut eaque distinctio eligendi autem corrupti cumque
+            accusantium, repellat neque vitae sunt facilis et deleniti quo
+            delectus optio magnam ipsum.
+          </p>
+          <a href="#" class="cta-btn">Get in touch with us</a>
+        </article>
+      </section>
+      <section aria-label="featured-title" class="featured sm-width">
+        <h2 class="featured__title">Our Services</h2>
+        <!-- div bruk for display som mine container -->
+        <div class="grid-flow">
+          <!-- div bruk for display som mine container -->
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-users"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"
+              ><i class="fa-solid fa-cloud-arrow-up"></i
+            ></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-code"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+          <figure>
+            <span class="featured-icon"><i class="fa-solid fa-wifi"></i></span>
+            <h3 class="featured__subtitle">Branding</h3>
+            <p class="featured__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </figure>
+        </div>
+      </section>
+      <section aria-label="testimonial-title" class="testimonial">
+        <h2 class="testimonial__title">Some of our clients</h2>
+        <div class="grid-flow-sm"  itemscope>
+          <figure>
+            <img src="img/logo1.png" alt="logo"  itemprop="logo"  >
+          </figure>
+          <figure>
+            <img src="img/logo2.png" alt="logo" itemprop="logo" >
+          </figure>
+          <figure>
+            <img src="img/logo3.png" alt="logo" itemprop="logo" >
+          </figure>
+        </div>
+      </section>
+      <section aria-label="contact-title" class="contact" id="contact">
+        <h2 class="contact__title">Contact us</h2>
+        <form class="cta-form container" method="POST">
+          <figure class="form-input">
+            <h3 class="form__title no-mgn">Send us a message</h3>
+            <label for="name">
+              Name:
+              <input
+                type="text"
+                name="name"
+                aria-required="true"
+            
+                placeholder="Ola Nordmann.."
+                id="name"
+              >
+            </label>
+            <label for="subject">
+              Subject:
+              <input
+                type="text"
+                name="name"
+                aria-required="true"
+              
+                placeholder="Branding.."
+                id="subject"
+              >
+            </label>
+            <label for="textarea">
+              Message:
+              <textarea id="textarea"></textarea>
+            </label>
+            <button class="cta-btn">Send message</button>
+          </figure>
+          <figure class="form-contact-info">
+            <h3 class="form__title">Contact Information</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              doloribus temporibus minima sed, esse architecto rem explicabo
+              asperiores ut laboriosam.
+            </p>
+            <ul class="contact-info">
+            <!-- microdata, itemprop -->
+           <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" > 
+              <p class="sm-space" itemprop="streetAddress">
+                <span><i class="fa-solid fa-location-pin"></i></span>
+                B R A Veien 4, 1783 Halden
+              </p>
+</li>
+<li>
+
+              <a class="sm-space" href="tel:69-60-80-00" itemprop="telephone">
+                <span><i class="fa-solid fa-phone"></i></span>
+                69 60 80 00
+              </a>
+</li>
+<li>
+
+              <a class="sm-space" href="mailto:postmottak@hiof.no" itemprop="email">
+                <span
+                  ><i style="color: #333" class="fa-solid fa-envelope"></i
+                ></span>
+                postmottak@hiof.no
+              </a>
+</li>
+            </ul>
+          </figure>
+        </form>
+      </section>
+      <section aria-label="map-title" class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292617!2d11.349786677386122!3d59.12887992704945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden%2C%20Norway!5e0!3m2!1sen!2sph!4v1700480571746!5m2!1sen!2sph"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          itemprop="hasMap" 
+        ></iframe>
+      </section>
+    </main>
+    <footer class="primary-footer">
+      <a href="#"  itemscope> <img class="logo" src="img/logo1.png" alt="logo" itemprop="logo" ></a>
+      <p class="">Companyrights Companyname 2023</p>
+      <ul  class="social-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <a href="#body" class="scroll-to-top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+  </body>
+</html>
